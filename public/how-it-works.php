@@ -2,8 +2,20 @@
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
+if (function_exists('apc_fetch')) {
+    $readme_content = apc_fetch('readme_content');
+} else {
+    $readme_content = null;
+}
+
 // Gets README from GitHub
-$readme_content = file_get_contents('https://raw.githubusercontent.com/fabfuel/prophiler/develop/README.md');
+if (!$readme_content) {
+    $readme_content = file_get_contents('https://raw.githubusercontent.com/fabfuel/prophiler/develop/README.md');
+
+    if (function_exists('apc_add')) {
+        apc_add('readme_content', $readme_content, 60 *60 *24);
+    }
+}
 
 $parsedown = new Parsedown();
 ?>

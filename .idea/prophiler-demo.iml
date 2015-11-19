@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fabfuel/prophiler" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
     </content>
@@ -26,11 +27,13 @@
       <library name="PHP">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
           <root url="file://$MODULE_DIR$/vendor/fabfuel/prophiler" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
           <root url="file://$MODULE_DIR$/vendor/fabfuel/prophiler" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
         </SOURCES>
