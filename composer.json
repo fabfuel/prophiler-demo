@@ -11,6 +11,7 @@
   ],
   "require": {
     "php" : ">=5.4",
-    "fabfuel/prophiler": "dev-develop"
+    "fabfuel/prophiler": "dev-develop",
+    "erusev/parsedown": "~1.5"
   }
 }
